@@ -17,30 +17,27 @@ restService.post('/operate', function(req, res) {
     var operations = req.body.result.parameters.operations
     var answer
     
-    /*
-    if (characterName == "homer simpson"){
-        answer = "He is the man of the house"
+    
+    if (characterName == "plus"){
+        answer = number1+number2
     }
-    else if (characterName == "marge simpson"){
-        answer = "She is the woman of the house"
+    else if (characterName == "minus"){
+        answer = number1-number2
     }
-    else if (characterName == "bart simpson"){
-        answer = "He is the naughty boy of the house"         
+    else if (characterName == "multiply"){
+        answer = number1*number2         
     }
-    else if (characterName == "lisa simpson"){
-        answer = "She is the good girl of the house"
-    }
-    else if (characterName == "maggie simpson"){
-        answer = "She if the clever baby of the house"
+    else if (characterName == "divide"){
+        answer = number1/number2
     }
     else{
         answer = "Whatever!"
     }
-    */
+    
     
     return res.json({
-        speech: operations,
-        displayText: operations,
+        speech: answer,
+        displayText: answer,
         source: 'operate-source'
     });
 });
