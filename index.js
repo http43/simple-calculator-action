@@ -39,8 +39,8 @@ restService.post('/operate', function(req, res) {
     */
     
     return res.json({
-        speech: number1,
-        displayText: number1,
+        speech: operations,
+        displayText: operations,
         source: 'operate-source'
     });
 });
