@@ -11,10 +11,13 @@ restService.use(bodyParser.urlencoded({
 
 restService.use(bodyParser.json());
 
-restService.post('/ask-character', function(req, res) {
-    var characterName = req.body.result.parameters.character
+restService.post('/operate', function(req, res) {
+    var number1 = req.body.result.parameters.number1
+    var number2 = req.body.result.parameters.number2
+    var operations = req.body.result.parameters.operations
     var answer
     
+    /*
     if (characterName == "homer simpson"){
         answer = "He is the man of the house"
     }
@@ -33,10 +36,12 @@ restService.post('/ask-character', function(req, res) {
     else{
         answer = "Whatever!"
     }
+    */
+    
     return res.json({
-        speech: answer,
-        displayText: answer,
-        source: 'ask-character-source'
+        speech: number1 operations number2,
+        displayText: number1 operations number2,
+        source: 'operate'
     });
 });
 
