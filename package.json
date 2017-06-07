@@ -1,7 +1,7 @@
 {
-  "name": "Simple-Calculator",
+  "name": "Simple-Calculator-Action",
   "version": "1.0.0",
-  "description": "Simple Calculator",
+  "description": "Simple Calculator Action",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
