@@ -15,11 +15,11 @@ restService.post('/operate', function(req, res) {
     var number1 = req.body.result.parameters.number1
     var number2 = req.body.result.parameters.number2
     var operations = req.body.result.parameters.operations
-    var answer
+    var answer 
     
     
     if (operations == "plus"){
-        answer = number1+number2
+        answer = number1 + number2
     }
     else if (operations == "minus"){
         answer = number1-number2
