@@ -1,7 +1,7 @@
 {
-  "name": "The-Simpsons-Wiki",
+  "name": "Simple-Calculator",
   "version": "1.0.0",
-  "description": "The Simpsons Wiki",
+  "description": "Simple Calculator",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
