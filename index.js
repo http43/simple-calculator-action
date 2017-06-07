@@ -18,16 +18,16 @@ restService.post('/operate', function(req, res) {
     var answer
     
     
-    if (characterName == "plus"){
+    if (operations == "plus"){
         answer = number1+number2
     }
-    else if (characterName == "minus"){
+    else if (operations == "minus"){
         answer = number1-number2
     }
-    else if (characterName == "multiply"){
+    else if (operations == "multiply"){
         answer = number1*number2         
     }
-    else if (characterName == "divide"){
+    else if (operations == "divide"){
         answer = number1/number2
     }
     else{
