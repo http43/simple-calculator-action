@@ -12,8 +12,8 @@ restService.use(bodyParser.urlencoded({
 restService.use(bodyParser.json());
 
 restService.post('/operate', function(req, res) {
-    var numberOne = req.body.result.parameters.number1
-    var numberTwo = req.body.result.parameters.number2
+    var number1 = req.body.result.parameters.number1
+    var number2 = req.body.result.parameters.number2
     var operations = req.body.result.parameters.operations
     var answer
     
@@ -39,9 +39,9 @@ restService.post('/operate', function(req, res) {
     */
     
     return res.json({
-        speech: numberOne,
-        displayText: numberOne,
-        source: 'operate'
+        speech: number1,
+        displayText: number1,
+        source: 'operate-source'
     });
 });
 
