@@ -19,7 +19,7 @@ restService.post('/operate', function(req, res) {
     
     
     if (operations == "plus"){
-        answer = number1+number2
+        answer = parseInt(number1)+parseInt(number2)
     }
     else if (operations == "minus"){
         answer = number1-number2
